@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tienda de barrio Lupe y Ana </title>
-<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Barrio Lupe y Ana</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -16,32 +16,68 @@
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
+            <!-- Categorías en el desplegable -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Categorías ▼</a>
+                <div class="dropdown-content">
+                    <a href="#sodas">Sodas y Refrescos</a>
+                    <a href="#dulces">Pastillas y Chocolates</a>
+                    <a href="#helados">Helados</a>
+                    <a href="#papel">Papel Higiénico</a>
+                    <a href="#galletas">Galletas</a>
+                </div>
+            </li>
             <li><a href="pages/contacto.html">Contacto</a></li>
         </ul>
     </nav>
+
     <main>
         <section>
-            <h2>Productos Destacados</h2>
+            <h2>Nuestros Productos</h2>
 
+            <!-- Sodas -->
+            <h3 id="sodas" class="titulo-categoria">🥤 Sodas y Refrescos</h3>
             <article class="producto">
-                <img src="assets/img/imagen_de_leche.jpg" alt="Bolsa de leche fresca">
-                <h3>Leche Fresca 1L</h3>
-                <p>Leche entera pasteurizada para el desayuno diario.</p>
-                <p class="precio">Precio: Bs. 6.50</p>
+                <img src="assets/img/imagen_de_leche.jpg" alt="Soda">
+                <h3>Coca Cola 2L</h3>
+                <p>Refresco gaseoso ideal para el almuerzo en familia.</p>
+                <p class="precio">Precio: Bs. 11.00</p>
             </article>
 
+            <!-- Pastillas y Chocolates -->
+            <h3 id="dulces" class="titulo-categoria">🍬 Pastillas y Chocolates</h3>
             <article class="producto">
-                <img src="assets/img/imagen_de_pan.jpg" alt="Pan de batalla recién horneado">
-                <h3>Pan de Batalla</h3>
-                <p>Pan fresco y crocante disponible desde las 6:30 AM.</p>
-                <p class="precio">Precio: Bs. 0.50 c/u</p>
+                <img src="assets/img/imagen_de_leche.jpg" alt="Chocolates">
+                <h3>Sublime / Chocolates Variados</h3>
+                <p>Deliciosos chocolates y pastillas para el antojo del día.</p>
+                <p class="precio">Precio: Bs. 3.50</p>
             </article>
 
+            <!-- Helados -->
+            <h3 id="helados" class="titulo-categoria">🍦 Helados</h3>
             <article class="producto">
-                <img src="assets/img/imagen_de_arroz1k.jpg" alt="Bolsa de arroz de 1kg">
-                <h3>Arroz Grano Largo 1kg</h3>
-                <p>Arroz de grano entero ideal para todas tus comidas.</p>
-                <p class="precio">Precio: Bs. 8.00</p>
+                <img src="assets/img/imagen_de_leche.jpg" alt="Helados">
+                <h3>Helado de Paleta / Vasito</h3>
+                <p>Helados refrescantes de varios sabores.</p>
+                <p class="precio">Precio: Bs. 2.50</p>
+            </article>
+
+            <!-- Papel Higiénico -->
+            <h3 id="papel" class="titulo-categoria">🧻 Papel Higiénico</h3>
+            <article class="producto">
+                <img src="assets/img/imagen_de_leche.jpg" alt="Papel Higiénico">
+                <h3>Papel Higiénico Paquete (4 rollos)</h3>
+                <p>Papel suave y de doble hoja de excelente calidad.</p>
+                <p class="precio">Precio: Bs. 7.00</p>
+            </article>
+
+            <!-- Galletas -->
+            <h3 id="galletas" class="titulo-categoria">🍪 Galletas</h3>
+            <article class="producto">
+                <img src="assets/img/imagen_de_pan.jpg" alt="Galletas">
+                <h3>Galletas Dulces y Saladas</h3>
+                <p>Paquetes surtidos para la merienda o el té.</p>
+                <p class="precio">Precio: Bs. 2.00</p>
             </article>
         </section>
 
@@ -49,11 +85,12 @@
             <h3>Información de Atención</h3>
             <p><strong>Horarios:</strong> Lunes a Viernes de 07:00 a 21:00</p>
             <p><strong>Ubicación:</strong> Calle Tarija #524, Potosí</p>
-            <p><strong>WhatsApp / QR:</strong>78506311 </p>
+            <p><strong>WhatsApp / QR:</strong> 78506311</p>
         </aside>
     </main>
+
     <footer>
-        <p>&copy; 2026 Tienda de Barrio "Lupe y Ana" - Todos los derechos reservados.</p>
+        <p>&copy; 2026 Tienda de Barrio Lupe y Ana - Todos los derechos reservados</p>
     </footer>
 
 </body>

@@ -2,37 +2,67 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f9f9f9; 
+    color: #333333;
 }
-header {
-    background-color: #2c3e50;
     color: white;
     text-align: center;
     padding: 20px;
+    border-bottom: 4px solid #d9381e; 
 }
 
 nav {
-    background-color: #34495e;
-    padding: 10px 0;
+    background-color: #2c4a78; 
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav li {
-    display: inline;
-    margin: 0 15px;
+    position: relative;
 }
 
-nav a {
+nav a, .dropbtn {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 20px;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav a:hover, .dropdown:hover .dropbtn {
+    background-color: #d9381e; 
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1b365d;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+}
+
+.dropdown-content a:hover {
+    background-color: #d9381e; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 main {
     display: flex;
@@ -44,39 +74,68 @@ main {
 
 section {
     flex: 3;
-    background-color: white;
+    background-color: white; 
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-aside {
-    flex: 1;
-    background-color: #e2e8f0;
-    padding: 20px;
-    border-radius: 5px;
-    height: fit-content;
-}
 .producto {
-    border: 1px solid #ddd;
+    border: 1px solid #e1e8ed;
     padding: 15px;
     margin-bottom: 15px;
-    border-radius: 5px;
+    border-radius: 6px;
+    background-color: #ffffff;
 }
 
 .producto img {
     max-width: 100px;
     height: auto;
 }
-
 .precio {
     font-weight: bold;
-    color: #e74c3c;
+    color: #d9381e;
+    font-size: 1.1rem;
+}
+
+.titulo-categoria {
+    background-color: #1b365d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-top: 25px;
+    font-size: 1.1rem;
+    border-left: 5px solid #d9381e; 
+}
+
+aside {
+    flex: 1;
+    background-color: #eef2f7; 
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+    border-top: 4px solid #1b365d;
 }
 
 footer {
-    background-color: #2c3e50;
+    background-color: #1b365d; 
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 20px;
+}
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+    }
 }
