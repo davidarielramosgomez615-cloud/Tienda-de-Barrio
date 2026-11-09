@@ -1,18 +1,38 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; 
-    color: #333333;
-}
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-bottom: 4px solid #d9381e; 
+    background-color: #f0f4f8;
+    color: #333;
 }
 
+/* Encabezado */
+header {
+    background-color: #1b365d; /* Azul principal */
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom: 5px solid #d9381e; /* Borde rojo */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin-top: 5px;
+    color: #e2e8f0;
+}
+
+/* Barra de navegación centrada y resaltada */
 nav {
-    background-color: #2c4a78; 
+    background-color: #2c4a78;
 }
 
 nav ul {
@@ -29,28 +49,31 @@ nav li {
 
 nav a, .dropbtn {
     display: block;
-    color: white;
+    color: #ffffff !important;
     text-align: center;
-    padding: 14px 20px;
+    padding: 15px 25px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 nav a:hover, .dropdown:hover .dropbtn {
-    background-color: #d9381e; 
+    background-color: #d9381e; /* Rojo vibrante en hover */
 }
+
+/* Menú desplegable desplegable */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #1b365d;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
 
 .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
+    color: white !important;
+    padding: 12px 18px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -58,76 +81,117 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 .dropdown-content a:hover {
-    background-color: #d9381e; 
+    background-color: #d9381e;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Estructura Principal Aprovechando la Pantalla */
 main {
     display: flex;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1000px;
+    gap: 25px;
+    padding: 30px;
+    max-width: 1200px; /* Pantalla más ancha */
     margin: 0 auto;
 }
 
-section {
+.catalogo {
     flex: 3;
-    background-color: white; 
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
+/* Títulos de Categoría en Azul y Rojo */
+.titulo-categoria {
+    background-color: #1b365d;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    border-left: 6px solid #d9381e;
+}
+
+/* Tarjetas de Producto Lado a Lado (Flex) */
 .producto {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     border: 1px solid #e1e8ed;
     padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 6px;
+    margin-top: 15px;
+    border-radius: 8px;
     background-color: #ffffff;
+    transition: transform 0.2s ease;
+}
+
+.producto:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .producto img {
-    max-width: 100px;
-    height: auto;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
 }
+
+.info-producto h3 {
+    margin: 0 0 8px 0;
+    color: #1b365d;
+}
+
+.info-producto p {
+    margin: 4px 0;
+    color: #555;
+}
+
 .precio {
     font-weight: bold;
-    color: #d9381e;
-    font-size: 1.1rem;
+    color: #d9381e !important;
+    font-size: 1.15rem;
 }
 
-.titulo-categoria {
-    background-color: #1b365d;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 4px;
-    margin-top: 25px;
-    font-size: 1.1rem;
-    border-left: 5px solid #d9381e; 
-}
-
+/* Panel Lateral (Aside) */
 aside {
     flex: 1;
-    background-color: #eef2f7; 
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     height: fit-content;
-    border-top: 4px solid #1b365d;
+    border-top: 5px solid #1b365d;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+aside h3 {
+    color: #1b365d;
+    margin-top: 0;
 }
 
 footer {
-    background-color: #1b365d; 
+    background-color: #1b365d;
     color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 18px;
+    margin-top: 40px;
 }
+
+/* Adaptabilidad a celulares */
 @media (max-width: 768px) {
     main {
         flex-direction: column;
-        padding: 10px;
+        padding: 15px;
+    }
+
+    .producto {
+        flex-direction: column;
+        text-align: center;
     }
 
     nav ul {
