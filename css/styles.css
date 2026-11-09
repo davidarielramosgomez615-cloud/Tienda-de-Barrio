@@ -1,4 +1,3 @@
-/* Estilos generales */
 * {
     box-sizing: border-box;
 }
@@ -8,29 +7,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f4f8;
-    color: #333;
+    color: #333333;
 }
-
-/* Encabezado */
 header {
-    background-color: #1b365d; /* Azul principal */
-    color: #ffffff;
+    background-color: #1b365d;
+    color: white;
     text-align: center;
     padding: 25px 15px;
-    border-bottom: 5px solid #d9381e; /* Borde rojo */
+    border-bottom: 5px solid #d9381e;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
 }
 
-header p {
-    margin-top: 5px;
-    color: #e2e8f0;
-}
-
-/* Barra de navegación centrada y resaltada */
 nav {
     background-color: #2c4a78;
 }
@@ -49,19 +39,17 @@ nav li {
 
 nav a, .dropbtn {
     display: block;
-    color: #ffffff !important;
+    color: white;
     text-align: center;
     padding: 15px 25px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem;
 }
 
 nav a:hover, .dropdown:hover .dropbtn {
-    background-color: #d9381e; /* Rojo vibrante en hover */
+    background-color: #d9381e;
 }
 
-/* Menú desplegable desplegable */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -72,7 +60,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 .dropdown-content a {
-    color: white !important;
+    color: white;
     padding: 12px 18px;
     text-decoration: none;
     display: block;
@@ -88,12 +76,11 @@ nav a:hover, .dropdown:hover .dropbtn {
     display: block;
 }
 
-/* Estructura Principal Aprovechando la Pantalla */
 main {
     display: flex;
     gap: 25px;
     padding: 30px;
-    max-width: 1200px; /* Pantalla más ancha */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -105,18 +92,49 @@ main {
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* Títulos de Categoría en Azul y Rojo */
-.titulo-categoria {
-    background-color: #1b365d;
-    color: #ffffff;
-    padding: 12px 18px;
-    border-radius: 5px;
-    margin-top: 30px;
-    font-size: 1.2rem;
+.banner-categoria {
+    padding: 25px 20px;
+    margin-top: 35px;
+    border-radius: 6px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: inset 0 0 0 2000px rgba(27, 54, 93, 0.75); /* Oscurece el fondo para leer la letra blanca */
     border-left: 6px solid #d9381e;
 }
 
-/* Tarjetas de Producto Lado a Lado (Flex) */
+.banner-categoria h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.4rem;
+}
+
+.banner-categoria p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #e2e8f0;
+}
+.banner-sodas {
+    background-image: url('../assets/img/soda.jpg');
+}
+
+.banner-dulces {
+    background-image: url('../assets/img/chocolate.jpg');
+}
+
+.banner-helados {
+    background-image: url('../assets/img/helado.jpg');
+}
+
+.banner-papel {
+    background-image: url('../assets/img/papel.jpg');
+}
+
+.banner-galletas {
+    background-image: url('../assets/img/pan.jpg');
+}
+
+/* Tarjetas de Producto */
 .producto {
     display: flex;
     align-items: center;
@@ -126,17 +144,11 @@ main {
     margin-top: 15px;
     border-radius: 8px;
     background-color: #ffffff;
-    transition: transform 0.2s ease;
-}
-
-.producto:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .producto img {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 6px;
     border: 1px solid #ddd;
@@ -147,18 +159,13 @@ main {
     color: #1b365d;
 }
 
-.info-producto p {
-    margin: 4px 0;
-    color: #555;
-}
-
 .precio {
     font-weight: bold;
-    color: #d9381e !important;
-    font-size: 1.15rem;
+    color: #d9381e;
+    font-size: 1.1rem;
 }
 
-/* Panel Lateral (Aside) */
+/* Panel Lateral */
 aside {
     flex: 1;
     background-color: #ffffff;
@@ -169,11 +176,6 @@ aside {
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-aside h3 {
-    color: #1b365d;
-    margin-top: 0;
-}
-
 footer {
     background-color: #1b365d;
     color: white;
@@ -181,8 +183,6 @@ footer {
     padding: 18px;
     margin-top: 40px;
 }
-
-/* Adaptabilidad a celulares */
 @media (max-width: 768px) {
     main {
         flex-direction: column;

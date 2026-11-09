@@ -32,10 +32,13 @@
 
     <main>
         <section class="catalogo">
-            <h2>Nuestros Productos</h2>
+            <h2>Nuestros Productos por Categoría</h2>
 
             <!-- SECCIÓN 1: SODAS Y REFRESCOS -->
-            <h3 id="sodas" class="titulo-categoria">🥤 Sodas y Refrescos</h3>
+            <div id="sodas" class="banner-categoria banner-sodas">
+                <h3>  Sodas y Refrescos</h3>
+                <p>Las mejores marcas de gaseosas bien heladas para tu hogar</p>
+            </div>
             
             <article class="producto">
                 <img src="assets/img/soda.jpg" alt="Coca Cola">
@@ -50,23 +53,16 @@
                 <img src="assets/img/soda.jpg" alt="Fanta Papaya">
                 <div class="info-producto">
                     <h3>Fanta Papaya 2L</h3>
-                    <p>Refrescante sabor a papaya, perfecta para acompañar cualquier comida.</p>
+                    <p>Refrescante sabor a papaya, perfecta para cualquier ocasión.</p>
                     <p class="precio">Precio: Bs. 10.00</p>
                 </div>
             </article>
-
-            <article class="producto">
-                <img src="assets/img/soda.jpg" alt="Sprite">
-                <div class="info-producto">
-                    <h3>Sprite 2L</h3>
-                    <p>Bebida sabor lima-limón, bien helada y burbujeante.</p>
-                    <p class="precio">Precio: Bs. 10.00</p>
-                </div>
-            </article>
-
 
             <!-- SECCIÓN 2: PASTILLAS Y CHOCOLATES -->
-            <h3 id="dulces" class="titulo-categoria">🍬 Pastillas y Chocolates</h3>
+            <div id="dulces" class="banner-categoria banner-dulces">
+                <h3> Pastillas y Chocolates</h3>
+                <p>Golosinas y chocolates para darle un gusto a tu día</p>
+            </div>
             
             <article class="producto">
                 <img src="assets/img/chocolate.jpg" alt="Sublime">
@@ -77,73 +73,47 @@
                 </div>
             </article>
 
-            <article class="producto">
-                <img src="assets/img/chocolate.jpg" alt="Pastillas Halls">
-                <div class="info-producto">
-                    <h3>Pastillas Halls (Menta / Miel)</h3>
-                    <p>Pastillas refrescantes para la garganta y el aliento.</p>
-                    <p class="precio">Precio: Bs. 1.00</p>
-                </div>
-            </article>
-
-
             <!-- SECCIÓN 3: HELADOS -->
-            <h3 id="helados" class="titulo-categoria">🍦 Helados</h3>
+            <div id="helados" class="banner-categoria banner-helados">
+                <h3> Helados Cremosos y Frutales</h3>
+                <p>Variedad de sabores refrescantes para disfrutar</p>
+            </div>
             
             <article class="producto">
                 <img src="assets/img/helado.jpg" alt="Helado de paleta">
-                <h3>Helado de Paleta D'Onofrio / Frigo</h3>
-                <p>Helados de agua y crema de varios sabores frutales.</p>
-                <p class="precio">Precio: Bs. 2.50</p>
+                <div class="info-producto">
+                    <h3>Helado de Paleta</h3>
+                    <p>Helados refrescantes de múltiples sabores frutales.</p>
+                    <p class="precio">Precio: Bs. 2.50</p>
+                </div>
             </article>
-
-            <article class="producto">
-                <img src="assets/img/helado.jpg" alt="Helado en vasito">
-                <h3>Helado en Vasito con Galleta</h3>
-                <p>Delicioso helado cremoso sabor a vainilla y chocolate.</p>
-                <p class="precio">Precio: Bs. 4.00</p>
-            </article>
-
 
             <!-- SECCIÓN 4: PAPEL HIGIÉNICO -->
-            <h3 id="papel" class="titulo-categoria">🧻 Papel Higiénico</h3>
+            <div id="papel" class="banner-categoria banner-papel">
+                <h3> Papel Higiénico y Limpieza</h3>
+                <p>Paquetes económicos y de excelente calidad</p>
+            </div>
             
             <article class="producto">
                 <img src="assets/img/papel.jpg" alt="Papel higiénico 4 rollos">
                 <div class="info-producto">
-                    <h3>Papel Higiénico Elite (Paquete de 4 rollos)</h3>
+                    <h3>Papel Higiénico Paquete (4 rollos)</h3>
                     <p>Papel suave de doble hoja con máxima absorción.</p>
                     <p class="precio">Precio: Bs. 7.00</p>
                 </div>
             </article>
 
-            <article class="producto">
-                <img src="assets/img/papel.jpg" alt="Papel higiénico bolsa grande">
-                <div class="info-producto">
-                    <h3>Papel Higiénico Parبول / Suave (Paquete de 12 rollos)</h3>
-                    <p>Presentación familiar económica para el hogar.</p>
-                    <p class="precio">Precio: Bs. 19.50</p>
-                </div>
-            </article>
-
-
             <!-- SECCIÓN 5: GALLETAS -->
-            <h3 id="galletas" class="titulo-categoria">🍪 Galletas</h3>
+            <div id="galletas" class="banner-categoria banner-galletas">
+                <h3> Galletas Dulces y Saladas</h3>
+                <p>Paquetes surtidos para el té o la merienda</p>
+            </div>
             
             <article class="producto">
-                <img src="assets/img/pan.jpg" alt="Galletas Mabel's">
+                <img src="assets/img/pan.jpg" alt="Galletas surtidas">
                 <div class="info-producto">
-                    <h3>Galletas Mabel's Surtidas</h3>
-                    <p>Paquete grande de galletas dulces y crackers para la merienda.</p>
-                    <p class="precio">Precio: Bs. 6.00</p>
-                </div>
-            </article>
-
-            <article class="producto">
-                <img src="assets/img/pan.jpg" alt="Galletas wafer">
-                <div class="info-producto">
-                    <h3>Galletas Wafer Nik / Ring</h3>
-                    <p>Galletas rellenas crujientes ideales para el recreo o el té.</p>
+                    <h3>Galletas Dulces y Saladas</h3>
+                    <p>Variedad de galletas crujientes para toda la familia.</p>
                     <p class="precio">Precio: Bs. 2.00</p>
                 </div>
             </article>
