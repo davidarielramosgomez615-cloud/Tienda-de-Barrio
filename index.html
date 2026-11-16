@@ -1,136 +1,52 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Barrio Lupe y Ana</title>
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inicio - Tienda de Barrio Lupe y Ana</title>
+<link href="css/styles.css" rel="stylesheet"/>
 </head>
 <body>
+<header>
+<h1>Tienda de Barrio "Lupe y Ana"</h1>
+<p>Productos de primera necesidad al mejor precio</p>
+</header>
+<nav>
+<ul>
+<li><a class="activo" href="index.html">Inicio</a></li>
+<li><a href="pages/productos.html">Productos</a></li>
+<li><a href="pages/ofertas.html">Ofertas</a></li>
+<li><a href="pages/nosotros.html">Nosotros</a></li>
+<li><a href="pages/contacto.html">Contacto</a></li>
+</ul>
+</nav>
+<main>
+<section class="contenido">
+<section class="bienvenida">
+<h2>¡Bienvenidos a nuestra tienda!</h2>
+<p>En la Tienda de Barrio Lupe y Ana encontrarás refrescos, chocolates, helados, galletas y productos para el hogar.</p>
+<a class="boton" href="pages/productos.html">Ver nuestros productos</a>
+</section>
+<section class="seccion-categorias"><h2>Nuestras categorías</h2><div class="categorias-inicio">
+<a href="pages/productos.html#sodas"><img alt="Imagen de sodas y refrescos" loading="lazy" src="assets/img/imagen_de_sodas.jpg"/><span>Sodas y Refrescos</span></a>
+<a href="pages/productos.html#dulces"><img alt="Imagen de pastillas y chocolates" loading="lazy" src="assets/img/imagen_chocolates_dulces.jpg"/><span>Pastillas y Chocolates</span></a>
+<a href="pages/productos.html#helados"><img alt="Imagen de helados" loading="lazy" src="assets/img/imagen_de_helados.jpg"/><span>Helados</span></a>
+<a href="pages/productos.html#papel"><img alt="Imagen de papel higiénico" loading="lazy" src="assets/img/imagen_papel.jpg"/><span>Papel Higiénico</span></a>
+<a href="pages/productos.html#galletas"><img alt="Imagen de galletas" loading="lazy" src="assets/img/imagen_galletas_saladas_dulces.jpg"/><span>Galletas</span></a>
+</div></section>
 
-    <header>
-        <h1>Tienda de Barrio "Lupe y Ana"</h1>
-        <p>Productos de primera necesidad al mejor precio</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Categorías ▼</a>
-                <div class="dropdown-content">
-                    <a href="#sodas">Sodas y Refrescos</a>
-                    <a href="#dulces">Pastillas y Chocolates</a>
-                    <a href="#helados">Helados</a>
-                    <a href="#papel">Papel Higiénico</a>
-                    <a href="#galletas">Galletas</a>
-                </div>
-            </li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section class="catalogo">
-            <h2>Nuestros Productos por Categoría</h2>
-
-            <!-- SECCIÓN 1: SODAS Y REFRESCOS -->
-            <div id="sodas" class="banner-categoria banner-sodas">
-                <h3>  Sodas y Refrescos</h3>
-                <p>Las mejores marcas de gaseosas bien heladas para tu hogar</p>
-            </div>
-            
-            <article class="producto">
-                <img src="assets/img/soda.jpg" alt="Coca Cola">
-                <div class="info-producto">
-                    <h3>Coca Cola 2L</h3>
-                    <p>Refresco gaseoso ideal para el almuerzo en familia.</p>
-                    <p class="precio">Precio: Bs. 11.00</p>
-                </div>
-            </article>
-
-            <article class="producto">
-                <img src="assets/img/soda.jpg" alt="Fanta Papaya">
-                <div class="info-producto">
-                    <h3>Fanta Papaya 2L</h3>
-                    <p>Refrescante sabor a papaya, perfecta para cualquier ocasión.</p>
-                    <p class="precio">Precio: Bs. 10.00</p>
-                </div>
-            </article>
-
-            <!-- SECCIÓN 2: PASTILLAS Y CHOCOLATES -->
-            <div id="dulces" class="banner-categoria banner-dulces">
-                <h3> Pastillas y Chocolates</h3>
-                <p>Golosinas y chocolates para darle un gusto a tu día</p>
-            </div>
-            
-            <article class="producto">
-                <img src="assets/img/chocolate.jpg" alt="Sublime">
-                <div class="info-producto">
-                    <h3>Chocolate Sublime con Maní</h3>
-                    <p>Clásico chocolate con leche y trozos de maní tostado.</p>
-                    <p class="precio">Precio: Bs. 3.50</p>
-                </div>
-            </article>
-
-            <!-- SECCIÓN 3: HELADOS -->
-            <div id="helados" class="banner-categoria banner-helados">
-                <h3> Helados Cremosos y Frutales</h3>
-                <p>Variedad de sabores refrescantes para disfrutar</p>
-            </div>
-            
-            <article class="producto">
-                <img src="assets/img/helado.jpg" alt="Helado de paleta">
-                <div class="info-producto">
-                    <h3>Helado de Paleta</h3>
-                    <p>Helados refrescantes de múltiples sabores frutales.</p>
-                    <p class="precio">Precio: Bs. 2.50</p>
-                </div>
-            </article>
-
-            <!-- SECCIÓN 4: PAPEL HIGIÉNICO -->
-            <div id="papel" class="banner-categoria banner-papel">
-                <h3> Papel Higiénico y Limpieza</h3>
-                <p>Paquetes económicos y de excelente calidad</p>
-            </div>
-            
-            <article class="producto">
-                <img src="assets/img/papel.jpg" alt="Papel higiénico 4 rollos">
-                <div class="info-producto">
-                    <h3>Papel Higiénico Paquete (4 rollos)</h3>
-                    <p>Papel suave de doble hoja con máxima absorción.</p>
-                    <p class="precio">Precio: Bs. 7.00</p>
-                </div>
-            </article>
-
-            <!-- SECCIÓN 5: GALLETAS -->
-            <div id="galletas" class="banner-categoria banner-galletas">
-                <h3> Galletas Dulces y Saladas</h3>
-                <p>Paquetes surtidos para el té o la merienda</p>
-            </div>
-            
-            <article class="producto">
-                <img src="assets/img/pan.jpg" alt="Galletas surtidas">
-                <div class="info-producto">
-                    <h3>Galletas Dulces y Saladas</h3>
-                    <p>Variedad de galletas crujientes para toda la familia.</p>
-                    <p class="precio">Precio: Bs. 2.00</p>
-                </div>
-            </article>
-
-        </section>
-
-        <aside>
-            <h3>Información de Atención</h3>
-            <p><strong>Horarios:</strong> Lunes a Viernes de 07:00 a 21:00</p>
-            <p><strong>Ubicación:</strong> Calle Tarija #524, Potosí</p>
-            <p><strong>WhatsApp / QR:</strong> 78506311</p>
-        </aside>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Tienda de Barrio Lupe y Ana - Todos los derechos reservados</p>
-    </footer>
-
+</section>
+<aside>
+<h3>Información de atención</h3>
+<p><strong>Horario:</strong> Lunes a viernes, de 07:00 a 21:00</p>
+<p><strong>Ubicación:</strong> Potosí, Bolivia</p>
+<p><strong>WhatsApp:</strong> 78506311</p>
+<a href="pages/contacto.html">Más información</a>
+</aside>
+</main>
+<footer>
+<p>© 2026 Tienda de Barrio Lupe y Ana</p>
+</footer>
 </body>
 </html>
